@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Form Pemesanan Pizza</title>
+    </head>
+
+    <body>
+        <fieldset>
+        <ul style="display: flex; list-style-type: none;">
+            <li>
+                <h1>Black Goose Bistro |</h1>
+            </li>
+            <li style="margin-left: 10px;">
+                <h1>Pizza-on-Demand</h1>
+            </li>
+        </ul>
+        <fieldset style="border-style: none;">
+            <div style="margin-left: 20px;">
+                Silahkan pesan pizza kami. Buatlah pesanan sesuai keinginan anda, kalau tidak gabut akan kamu antar ke anda.
+            </div>
+        </fieldset>
+        <br>
+
+        <form action="http://blackgoosebistro.com/pizza.php" method="post">
+            <fieldset style="border-style: none;">
+                <legend>Your Information</legend>
+                <div>
+                    <label>Nama</label>
+                    <input type="text" name="username" value="" size="25"/>
+                </div>
+                <div>
+                    <label>Alamat</label>
+                    <input type="text" name="alamat" value="" size="25"/>
+                </div>
+                <div>
+                    <label>No. HP</label>
+                    <input type="text" name="no.hp" value="" size="25"/>
+                </div>
+                <div>
+                    <label>Email</label>
+                    <input type="text" name="email" value="" size="25"/>
+                </div>
+                <div>
+                    <label>Instruksi pesanan:</label>
+                    <br>
+                    <textarea name="instruksi" cols="40" rows="3" maxlength="400"></textarea>
+                </div>
+            </fieldset>
+            <br>
+
+            <fieldset style="border-style: none;">
+                <b>Design Your Dream Pizza:</b>
+                <div>Pizza specs</div>
+            </fieldset>
+
+            <fieldset style="border-style: none;">
+                <legend>Crust (Choose one):</legend>
+                <ul style="list-style-type: none;">
+                    <li>
+                        <input type="radio" name="pilihan" value=""> 
+                        Classic white
+                    </li>
+                    <li>
+                        <input type="radio" name="pilihan" value="">
+                        Multigrain
+                    </li>
+                    <li>
+                        <input type="radio" name="pilihan" value="">
+                        Cheese-Stuffed crust
+                    </li>
+                    <li>
+                        <input type="radio" name="pilihan" value="">
+                        Gluten-free
+                    </li>
+                </ul>
+            </fieldset>
+            
+            <fieldset style="border-style: none;">
+                <legend>Topping (choose as many as you want):</legend>
+                <input type="checkbox" id="topping1" name="topping1" value="" checked>
+                <label for="topping1">Red sauce</label>
+                <br>
+                <input type="checkbox" id="topping2" name="topping2" value="">
+                <label for="topping2"> White sauce</label>
+                <br>
+                <input type="checkbox" id="topping3" name="topping3" value="">
+                <label for="topping3">Mozzarella Cheese</label>
+                <br>
+                <input type="checkbox" id="topping4" name="topping4" value="">
+                <label for="topping4">Pepperoni</label>
+                <br>
+                <input type="checkbox" id="topping5" name="topping5" value="">
+                <label for="topping5">Mushrooms</label>
+                <br>
+                <input type="checkbox" id="topping6" name="topping6" value="">
+                <label for="topping6">Peppers</label>
+                <br>
+                <input type="checkbox" id="topping7" name="topping7" value="">
+                <label for="topping7">Anchovies</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Number</legend>
+                <div>
+                    <label>How many pizzas: <input type="number" min="1" max="6"></label>
+                </div>
+            </fieldset>
+
+            <p>
+                <input type="submit" value="Bring me a Pizza!">
+                <input type="reset" value="reset">
+            </p>
+        </form>
+        </fieldset>
+    </body>
+</html>
